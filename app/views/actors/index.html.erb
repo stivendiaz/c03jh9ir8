@@ -1,0 +1,21 @@
+<table>
+
+    <%  @actors.each do |a|%>
+  <tr>
+    
+    
+        <th><%= a.name %></th>
+        <th><%= a.bio %></th>
+        <th><%= a.birth_date %></th>
+        <th><%= a.birth_place %></th>
+        <th><%= image_tag("#{a.image_url}") %></th>
+        <%if !a.alive%>
+        <th><%= a.death_date %></th>
+        <th><%= a.death_place %></th>
+        <%end%>
+
+
+
+  </tr>
+     <% end %>
+</table>
