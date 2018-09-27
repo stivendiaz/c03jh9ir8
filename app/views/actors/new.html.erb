@@ -1,0 +1,25 @@
+<%= form_for @actor do |f| %>
+  <div>
+    <div>
+     <%= f.label(:name, "Nombre:") %>
+     <%= f.text_field :name %>
+   </div>
+   <div>
+     <%= f.label(:bio, "Biografia:") %>
+     <%= f.text_area :bio%>
+   </div>
+   <div>
+     <%= f.label(:birth_date, "Fecha de nacimiento:") %>
+     <%= f.date_field :birth_date%>
+  </div>
+    <div>
+     <%= f.label(:birth_place, "Lugar de nacimiento: ") %>
+     <%= f.text_field :birth_place %>
+   </div>
+   <div>
+    <%= f.label(:image_url, "URL de la foto: ") %>
+    <%= f.text_field :image_url %>
+  </div>
+  </div>
+  <%= f.submit %>
+<% end %>
