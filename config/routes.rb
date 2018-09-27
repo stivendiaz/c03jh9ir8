@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 
   # Example of regular route:
      get '/actors' => 'actors#index'
+     get 'actors/new'
 
      resources :actors
 
